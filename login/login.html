@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div id="login_wrap">
+        <div id="login_head">
+            <h1>Kakao</h1>
+        </div>
+        <div id="login_content">
+            <div id="prompt">
+                <h2>카카오계정 정보를 입력해주세요</h2>
+            </div>
+            <div class="inp_info">
+                <form class="wrap_form" action="#" method="post">
+                    <div class="form_box new_id">
+                        <strong class="tf_required">카카오계정 이메일</strong>
+                        <div class="item_inp">
+                            <input type="email" name="email" id="inp_email" placeholder="이메일 주소를 입력하세요">
+                            <span id="mail_domain">
+                                @daum.net
+                            </span>
+                        </div>
+                        <ul class="list_desc">
+                            <li>카카오계정으로 사용할 Daum 이메일을 만들어주세요.</li>
+                            <li>만약 사용중인 Daum 메일이 있다면, Daum 아이디로 로그인하여 계정을 가입해주세요.</li>
+                        </ul>
+                    </div>
+                    <div class="form_box new_pwd">
+                        <strong class="tf_required">비밀번호</strong>
+                        <div class="item_inp">
+                            <input type="password" name="pwd" id="inp_pwd_confirm" placeholder="비밀번호 입력">
+                        </div>
+                        <div class="item_inp pwd_confirm">
+                            <input type="password" name="pwd_confirm" id="inp_pwd_confirm" placeholder="비밀번호 재입력">
+                            <label class="lab_placeholder"></label>
+                        </div>
+                    </div>
+                    <div class="form_box new_nick">
+                        <strong class="tf_required">닉네임</strong>
+                        <div class="item_inp">
+                            <input type="text" name="nick" id="inp_nick" placeholder="닉네임을 입력하세요">
+                            <span class="count">0 / 20</span>
+                        </div>
+                    </div>
+                    <div class="form_box new_phnum">
+                        <strong class="tf_required">전화번호</strong>
+                        <div class="item_inp">
+                            <input type="tel" name="phone" id="inp_phone" placeholder="닉네임을 입력하세요">
+                        </div>
+                    </div>
+                    <div class="form_box new_birth">
+                        <strong class="tf_required">생일/성별</strong>
+                        <div class="item_inp birth">
+                            <div class="wrap_inp">
+                                <div class="item_inp item_select select_year">
+                                    <input type="hidden" data-type="select" name="year" class="lab_select">
+                                    <a href="#none" class="link_selected">연도
+                                        <span class="ico_arr">선택</span>
+                                    </a>
+                                </div>
+                                <div class="item_inp item_select select_month">
+                                    <input type="hidden" data-type="select" name="month" class="lab_select">
+                                    <a href="#none" class="link_selected">월
+                                        <span class="ico_arr">선택</span>
+                                    </a>
+                                </div>
+                                <div class="item_inp item_select select_day">
+                                    <input type="hidden" data-type="select" name="day" class="lab_select">
+                                    <a href="#none" class="link_selected">일
+                                        <span class="ico_arr">선택</span>
+                                    </a>
+                                </div>
+                                <div class="item_inp item_check check_lunar">
+                                    <input type="checkbox" data-type="checkbox" name="is_lunar" class="lab_check">
+                                    <span class="ico_check"></span>
+                                    <span class="txt_check">음력</span>
+                                </div>
+                                <hr>
+                                <div class="select_sex">
+                                    <div id="is_none">
+                                        <input type="checkbox" data-type="checkbox" name="none" class="lab_check">
+                                        <span class="txt_check">선택없음</span>
+                                    </div>
+                                    <div id="is_female">
+                                        <input type="checkbox" data-type="checkbox" name="is_female" class="lab_check">
+                                        <span class="txt_check">여성</span>
+                                    </div>
+                                    <div id="is_male">
+                                        <input type="checkbox" data-type="checkbox" name="is_male" class="lab_check">
+                                        <span class="txt_check">남성</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <ul class="list_desc"></ul>
+
+                    </div>
+                    <div class="wrap_btn">
+                        <button class="btn_g btn_disabled btn_type2" type="button">다음</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Copyright 👩‍💻 River Corps. All rights reserved.</span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+}
+
+.inp_info {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.tf_required {
+    display: block;
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-size: 10px;
+}
+
+.form_box {
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.item_inp .lab_placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    color: #ccc;
+}
+
+.inp_info .wrap_form {
+    padding: 40px;
+ }
+
+.item_inp span {
+    font-size: 10px;
+}
+
+#login_head {
+    text-align: center;
+    
+}
+
+#login_content {
+    display: block;
+    border: 1px solid #7c7c7c;
+}
+
+.list_desc li {
+    position: relative;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+ul, li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.new_birth {
+    height: 48px;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.item_select .lab_select {
+    position: relative;
+    display: block;
+    height: 48px;
+    line-height: 47px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap_inp {
+    box-sizing: border-box;
+}
+
+.wrap_inp:after {
+    display: block;
+    height: 0;
+    content: ".";
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.wrap_btn .btn_g {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #333;
+    background-color: #f6f6f6;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #7c7c7c;
+    line-height: 18px;
+    letter-spacing: 0;
+}
