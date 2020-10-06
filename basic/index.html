@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Ixternal Script Link -->
+    <script type="text/javascript">
+        function call() {
+            alert('internal called!');
+        }
+        </script>
+
+
+</head>
+<body>
+    <h3>inline</h3>
+    <input type="button" value="inline" onclick="alert('Hello!')">
+    <h3>internal</h3>
+    <input type="button" value="internal" onclick="call()">
+    <h3>external</h3>
+    <input type="button" value="external" onClick="external_call()">
+    <hr>
+    
+    <form action="#" method="GET" name="myForm">
+        <input type="text" name="userId" value="ram"><br>
+        <input type="password" name="password" value="1234"><br>
+        <input type="submit" value="submit"><br>
+    </form>
+    <button type="submit">Confirm</button>
+</body>
+<!-- External Script Link -->
+<script type="text/javascript" src="index.js"></script>
+</html>

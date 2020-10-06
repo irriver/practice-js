@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="index.js">
+       
+    </script>
+</head>
+<body>
+    <h3>클라이언트 유효성 검증</h3>
+    <p>id, pwd 입력 >> </p>
+    <ul>
+        <li>서버 전송시 서버에서 검증 > 응답</li>
+        <li>클라이언트에서 검증 후 서버로 전송 응답</li>
+    </ul>
+    <br>
+
+    <div>button - onclick</div>
+    <div>type: submit</div>
+
+    <br>
+
+    <form action="#" method="get" id="loginForm">
+        ID <input type="text" name="userId" id="userId"><br>
+        PW <input type="password" name="password" id="userPw"><br>
+        <input type="button" value="확인" onclick="loginValid()">
+    </form>
+</body>
+</html>
