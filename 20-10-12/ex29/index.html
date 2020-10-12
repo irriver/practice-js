@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+
+		window.onload = function () {
+			let pics = [
+				"images/1.jpg",
+				"images/2.jpg",
+				"images/3.jpg",
+				"images/4.jpg",
+			];
+
+			let index = 0;
+			// console.log(index);
+			document.getElementById('prev').onclick = function () {
+				if (index === 0) {
+					index = pics.length;
+				}
+				document.getElementById('imgs').src = pics[--index];
+				// console.log('after prev: ' + index);
+			};
+			
+			document.getElementById('next').onclick = function () {
+				if (index === pics.length) {
+					index = 0;
+				}
+				document.getElementById('imgs').src = pics[index++];
+				// console.log('after next: ' + index);
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h3>DOM 슬라이드</h3>
+	<img src="images/1.jpg" id="imgs" width="200" height="200" alt="이미지">
+	<hr>
+	<a href="#" id="prev">이전</a> || <a href="#" id="next">다음</a>
+</body>
+</html>
